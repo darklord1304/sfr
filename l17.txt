@@ -1,6 +1,5 @@
 #include <iostream>
 #include <fstream>
-#include <iomanip>
 #include <cstring>
 
 using namespace std;
@@ -82,14 +81,15 @@ int main()
     n--;
 
     cout << "\nElements common to both files are:\n";
-    for (int i = 0; i < m; i++)
+    for (int i = 0; i <= m; i++)
     {
-        for (int j = 0; j < n; j++)
+        for (int j = 0; j <= n; j++)
         {
             if (strcmp(list1[i], list2[j]) == 0)
             {
                 out3 << list1[i] << '\n';
                 cout << list1[i] << '\n';
+                break;
             }
         }
     }
@@ -100,4 +100,3 @@ int main()
 
     return 0;
 }
-
